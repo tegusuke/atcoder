@@ -7,22 +7,12 @@ int main() {
   cin >> s >> t;
 
   int count = 0;
-  bool finished = false;
-  rep(i, s.size()) {
-    rep(j, t.size()) {
-      if (count == s.size()) {
-        finished = true;
-        break;
-      }
-      if (s.at(i) == t.at(j)) {
-        count++;
-        cout << j + 1 << " ";
-      }
+  rep(i, t.size()) {
+    if (s.at(count) == t.at(i)) {
+      cout << i + 1 << " ";
+      count++;
     }
-    if (finished) {
-      break;
-    }
-  }
+  } 
   cout << endl;
   return 0;
 }
