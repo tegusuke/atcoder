@@ -1,7 +1,10 @@
 {
   "files.associations": {
     "ostream": "cpp",
-    "iostream": "cpp" 
+    "iostream": "cpp",
+    "array": "cpp",
+    "string_view": "cpp",
+    "stacktrace": "cpp"
   },
   "files.autoSave": "onFocusChange",
   "editor.tabSize": 2
